@@ -4,20 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-size=1.0">
-    <title>Deposit stock!</title>
+    <title>Warehouse stock</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <section>
         <header>
+            <div id="filters">
+                <input placeholder="Name">
+                <select>
+                    <option value="">All</option>
+                    <option value="office suits">Office suits</option>
+                    <option value="dresses">Dresses</option>
+                    <option value="coats">Coats</option>
+
+                </select>
+                <button>Filter</button> 
+            </div>
             <button onclick="addNewProduct()">Add product</button>
 
-            <button onclick="findMostExpensive()">Find the most Expensive</button>
+            <button onclick="showMostExpensive()">Show the most Expensive</button>
 
-            <button onclick="findTheCheapest()">Find the cheapest</button>
+            <button onclick="showTheCheapest()">Show the cheapest</button>
 
-            <button onclick="filterByCategory()">Filter by category</button>
+            <button onclick="resetPage()">Reset</button>
+
 
         </header>
 
