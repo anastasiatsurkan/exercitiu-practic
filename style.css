@@ -1,0 +1,17 @@
+* {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center; 
+    gap: 50px;   
+}
+
+button {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0;
+    background-color: black;
+    color: white;
+}
