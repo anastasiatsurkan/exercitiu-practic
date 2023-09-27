@@ -43,6 +43,22 @@ const products = [
 
 const productList = document.getElementById('productList');
 
+function filterProducts(product) {
+    const inputVal =document.getElementById("search").value;
+    products.forEach((product) => {
+        if (product.category === value);
+
+    alert(inputVal);
+    });
+
+    renderProducts(products);
+}
+
+const chooseCat = [dresses, office, coats, all];
+const start = getRandomCat(0, 3);
+function getRandomCat (min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function renderProducts(items) {
     productList.innerHTML = "";
@@ -168,7 +184,7 @@ function showMostExpensive() {
     renderProducts([mostExpensive]);
 }
 
-function showTheCheapest() {
+function findTheCheapest() {
     let theCheapest = products[0];
 
     products.forEach((product) => {
@@ -177,7 +193,13 @@ function showTheCheapest() {
         }
     });
 
-    renderProducts([theCheapest])
+    return theCheapest;
+}
+
+function showTheCheapest() {
+    let theCheapest = findTheCheapest();
+
+    renderProducts([theCheapest]);
 }
 
 function filterByCategory(category) {
