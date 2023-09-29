@@ -43,21 +43,22 @@ const products = [
 
 const productList = document.getElementById('productList');
 
-function filterProducts(product) {
-    const inputVal =document.getElementById("search").value;
-    products.forEach((product) => {
-        if (product.category === value);
-
-    alert(inputVal);
+function findProductsByName() {
+    const inputVal = document.getElementById("search").value;
+    const inputProducts = products.filter((product) => {
+        return product.name.includes(inputVal);
     });
 
-    renderProducts(products);
+    renderProducts(inputProducts);
 }
 
-const chooseCat = [dresses, office, coats, all];
-const start = getRandomCat(0, 3);
-function getRandomCat (min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function selectCat() {
+    const categoryList = document.getElementById("select").value;
+    const selectedCategory = products.filter((product) => {
+        return product.category === categoryList;
+    });
+
+    renderProducts(selectedCategory);
 }
 
 function renderProducts(items) {

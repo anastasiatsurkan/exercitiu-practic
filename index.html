@@ -12,15 +12,14 @@
     <section>
         <header>
             <div id="filters">
-                <input id="search" placeholder="Name">
-                <select>
+                <input oninput="findProductsByName()" id="search" placeholder="Name">
+                <select onchange="selectCat()" id="select">
                     <option value="">All</option>
                     <option value="office suits">Office suits</option>
                     <option value="dresses">Dresses</option>
                     <option value="coats">Coats</option>
 
                 </select>
-                <button onclick="filterProducts">Filter</button> 
             </div>
             <button onclick="addNewProduct()">Add product</button>
 

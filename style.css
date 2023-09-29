@@ -18,6 +18,19 @@ header button {
     height: 35px;
 }
 
+header input {
+    border: 2px solid black;
+    height: 30px;
+    font-size: 16px;
+}
+
+header select {
+    border: 2px solid black;
+    height: 30px;
+    font-size: 16px;
+
+}
+
 .card {
     width: 100%;
     display: flex;
